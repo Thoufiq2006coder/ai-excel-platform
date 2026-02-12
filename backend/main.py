@@ -49,18 +49,24 @@ async def upload_file(file: UploadFile = File(...)):
         contents = await file.read()
         filename = file.filename.lower()
         
+        # INSIDE upload_file FUNCTION:
         if filename.endswith('.csv'):
             df = pd.read_csv(io.BytesIO(contents))
+        elif filename.endswith('.tsv'):
+            df = pd.read_csv(io.BytesIO(contents), sep='\t')
         elif filename.endswith(('.xls', '.xlsx')):
             df = pd.read_excel(io.BytesIO(contents))
+        elif filename.endswith('.json'):
+            # NEW: Support for JSON upload
+            df = pd.read_json(io.BytesIO(contents))
         else:
-            return {"error": "Invalid file type"}
+            return {"error": "Invalid file type. Please upload CSV, Excel, or JSON."}
         
         df = df.fillna("")
         current_df = df
         
         # Preview first 20 rows
-        preview = df.head(20).to_dict(orient='records')
+        preview = df.head(40).to_dict(orient='records')
         return {
             "status": "success", 
             "preview": preview, 
