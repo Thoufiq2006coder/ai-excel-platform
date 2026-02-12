@@ -6,14 +6,14 @@
 ![Gemini](https://img.shields.io/badge/AI-Google%20Gemini%20Flash-orange)
 ![License](https://img.shields.io/badge/License-MIT-lightgrey)
 
-**Advance Spreadsheet Assistance** is an intelligent web platform that democratizes data analysis. By combining a familiar spreadsheet interface with the power of **Google Gemini 1.5 Flash**, it allows users to clean, analyze, and visualize complex datasets using simple natural language commands.
+**Advance Spreadsheet Assistance** is an intelligent web platform that democratizes data analysis. By combining a familiar spreadsheet interface with the power of **Google Gemini 2.5 Flash**, it allows users to clean, analyze, and visualize complex datasets using simple natural language commands.
 
 ---
 
 ## 🚀 Key Features
 
 * **⚡ Instant Data Parsing:** Drag-and-drop support for CSV, Excel (`.xlsx`), and JSON files.
-* **🤖 AI Data Analyst:** Integrated with **Google Gemini 1.5 Flash** to answer questions like:
+* **🤖 AI Data Analyst:** Integrated with **Google Gemini 2.5 Flash** to answer questions like:
     * *"Summarize the sales trend for Q3"*
     * *"Find all duplicate email addresses"*
     * *"Write an Excel formula to calculate profit margin"*
