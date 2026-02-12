@@ -37,7 +37,7 @@
 ### **Backend (The Brain)**
 * **Language:** Python 3.10
 * **Framework:** FastAPI (High-performance Async API)
-* **AI Engine:** LangChain + Google Gemini 1.5 Flash
+* **AI Engine:** LangChain + Google Gemini 2.5 Flash
 * **Data Processing:** Pandas, OpenPyXL
 
 ### **Frontend (The Face)**
